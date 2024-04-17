@@ -3,7 +3,7 @@ public class calculate {
         return a + b;
     }
 
-    public static boolean isOddOrEven(int a) {
+    public static boolean isEven(int a) {
         return a % 2 == 0;
     }
 

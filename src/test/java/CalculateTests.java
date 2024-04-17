@@ -18,24 +18,24 @@ public class CalculateTests {
     }
 
     @Test
-    void isOddOrEvenWhenThreeThenReturnFalse() {
+    void isEvenWhenThreeThenReturnFalse() {
         //GIVEN
         int a = 3;
 
         //WHEN
-        boolean actual = calculate.isOddOrEven(a);
+        boolean actual = calculate.isEven(a);
 
         //THEN
         assertFalse(actual);
     }
 
     @Test
-    void isOddOrEvenWhenFourThenReturnTrue() {
+    void isEvenWhenFourThenReturnTrue() {
         //GIVEN
         int a = 4;
 
         //WHEN
-        boolean actual = calculate.isOddOrEven(a);
+        boolean actual = calculate.isEven(a);
 
         //THEN
         assertTrue(actual);
