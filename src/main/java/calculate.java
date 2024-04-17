@@ -3,8 +3,8 @@ public class calculate {
         return a + b;
     }
 
-    public static int isOddOrEven(int a) {
-        return a % 2 == 0 ? 1 : 0;
+    public static boolean isOddOrEven(int a) {
+        return a % 2 == 0;
     }
 
     public static int getProduct(int a, int b) {

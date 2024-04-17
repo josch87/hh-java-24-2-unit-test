@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class CalculateTests {
     @Test
     void getSumWhenTwoAndThreeThenReturnFive() {
@@ -12,6 +14,7 @@ public class CalculateTests {
 
         //THEN
         int expected = 5;
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -20,10 +23,10 @@ public class CalculateTests {
         int a = 3;
 
         //WHEN
-        int actual = calculate.isOddOrEven(a);
+        boolean actual = calculate.isOddOrEven(a);
 
         //THEN
-        boolean expected = false;
+        assertFalse(actual);
     }
 
     @Test
@@ -37,6 +40,7 @@ public class CalculateTests {
 
         //THEN
         int expected = 12;
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -49,6 +53,7 @@ public class CalculateTests {
 
         //THEN
         String expected = "ALJOSCHA";
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -60,7 +65,7 @@ public class CalculateTests {
         boolean actual = calculate.isPositive(a);
 
         //THEN
-        boolean expected = true;
+        assertTrue(actual);
     }
 }
 
