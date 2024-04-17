@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-public class calculate {
+public class CalculateTests {
     @Test
     void getSumWhenTwoAndThreeThenReturnFive() {
         //GIVEN
@@ -8,7 +8,7 @@ public class calculate {
         int b = 3;
 
         //WHEN
-        int actual = getSum(a, b);
+        int actual = calculate.getSum(a, b);
 
         //THEN
         int expected = 5;
@@ -20,7 +20,7 @@ public class calculate {
         int a = 3;
 
         //WHEN
-        int actual = isOddOrEven(a);
+        int actual = calculate.isOddOrEven(a);
 
         //THEN
         boolean expected = false;
@@ -33,7 +33,7 @@ public class calculate {
         int b = 4;
 
         //WHEN
-        int actual = getProduct(a, b);
+        int actual = calculate.getProduct(a, b);
 
         //THEN
         int expected = 12;
@@ -45,7 +45,7 @@ public class calculate {
         String a = "Aljoscha";
 
         //WHEN
-        String actual = convertToUppercase(a);
+        String actual = calculate.convertToUppercase(a);
 
         //THEN
         String expected = "ALJOSCHA";
@@ -57,7 +57,7 @@ public class calculate {
         int a = 3;
 
         //WHEN
-        boolean actual = isPositive(a);
+        boolean actual = calculate.isPositive(a);
 
         //THEN
         boolean expected = true;
