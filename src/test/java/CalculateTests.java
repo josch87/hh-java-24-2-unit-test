@@ -30,6 +30,18 @@ public class CalculateTests {
     }
 
     @Test
+    void isOddOrEvenWhenFourThenReturnTrue() {
+        //GIVEN
+        int a = 4;
+
+        //WHEN
+        boolean actual = calculate.isOddOrEven(a);
+
+        //THEN
+        assertTrue(actual);
+    }
+
+    @Test
     void getProductWhenThreeAndFourThenReturnTwelve() {
         //GIVEN
         int a = 3;
@@ -60,6 +72,30 @@ public class CalculateTests {
     void isPositiveWhenThreeThenReturnTrue() {
         //GIVEN
         int a = 3;
+
+        //WHEN
+        boolean actual = calculate.isPositive(a);
+
+        //THEN
+        assertTrue(actual);
+    }
+
+    @Test
+    void isPositiveWhenMinusThreeThenReturnFalse() {
+        //GIVEN
+        int a = -3;
+
+        //WHEN
+        boolean actual = calculate.isPositive(a);
+
+        //THEN
+        assertFalse(actual);
+    }
+
+    @Test
+    void isPositiveWhenZeroThenReturnTrue() {
+        //GIVEN
+        int a = 0;
 
         //WHEN
         boolean actual = calculate.isPositive(a);
