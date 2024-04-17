@@ -16,6 +16,6 @@ public class calculate {
     }
 
     public static boolean isPositive(int a) {
-        return a >= 0;
+        return a > 0;
     }
 }

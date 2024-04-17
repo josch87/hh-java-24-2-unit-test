@@ -93,7 +93,7 @@ public class CalculateTests {
     }
 
     @Test
-    void isPositiveWhenZeroThenReturnTrue() {
+    void isPositiveWhenZeroThenReturnFalse() {
         //GIVEN
         int a = 0;
 
@@ -101,7 +101,7 @@ public class CalculateTests {
         boolean actual = calculate.isPositive(a);
 
         //THEN
-        assertTrue(actual);
+        assertFalse(actual);
     }
 }
 
