@@ -1,4 +1,4 @@
-public class calculate {
+public class Calculate {
     public static int getSum(int a, int b) {
         return a + b;
     }

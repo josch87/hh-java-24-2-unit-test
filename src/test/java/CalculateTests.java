@@ -10,7 +10,7 @@ public class CalculateTests {
         int b = 3;
 
         //WHEN
-        int actual = calculate.getSum(a, b);
+        int actual = Calculate.getSum(a, b);
 
         //THEN
         int expected = 5;
@@ -23,7 +23,7 @@ public class CalculateTests {
         int a = 3;
 
         //WHEN
-        boolean actual = calculate.isEven(a);
+        boolean actual = Calculate.isEven(a);
 
         //THEN
         assertFalse(actual);
@@ -35,7 +35,7 @@ public class CalculateTests {
         int a = 4;
 
         //WHEN
-        boolean actual = calculate.isEven(a);
+        boolean actual = Calculate.isEven(a);
 
         //THEN
         assertTrue(actual);
@@ -48,7 +48,7 @@ public class CalculateTests {
         int b = 4;
 
         //WHEN
-        int actual = calculate.getProduct(a, b);
+        int actual = Calculate.getProduct(a, b);
 
         //THEN
         int expected = 12;
@@ -61,7 +61,7 @@ public class CalculateTests {
         String a = "Aljoscha";
 
         //WHEN
-        String actual = calculate.convertToUppercase(a);
+        String actual = Calculate.convertToUppercase(a);
 
         //THEN
         String expected = "ALJOSCHA";
@@ -74,7 +74,7 @@ public class CalculateTests {
         int a = 3;
 
         //WHEN
-        boolean actual = calculate.isPositive(a);
+        boolean actual = Calculate.isPositive(a);
 
         //THEN
         assertTrue(actual);
@@ -86,7 +86,7 @@ public class CalculateTests {
         int a = -3;
 
         //WHEN
-        boolean actual = calculate.isPositive(a);
+        boolean actual = Calculate.isPositive(a);
 
         //THEN
         assertFalse(actual);
@@ -98,7 +98,7 @@ public class CalculateTests {
         int a = 0;
 
         //WHEN
-        boolean actual = calculate.isPositive(a);
+        boolean actual = Calculate.isPositive(a);
 
         //THEN
         assertFalse(actual);
